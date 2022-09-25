@@ -9,12 +9,10 @@ Original file is located at
 
 import pandas as pd
 import numpy as np
-#from numpy import genfromtxt
-#import matplotlib.pyplot as plt
 import math
 from math import sqrt
 import csv
-#import operator
+
 
 train_set = pd.read_csv('/mnist_train.csv', header=None )
 test_set = pd.read_csv('/mnist_test.csv', header=None )
@@ -97,12 +95,3 @@ def main():
 if __name__ == '__main__':
   main()
 
-import pandas as pd
-
-from sklearn import datasets
-
-# Load the IRIS dataset
-mnist = datasets.load_digits()
-
-df = pd.DataFrame(data=mnist.data)
-df.head()
